@@ -31,13 +31,17 @@
 	_gaq.push([ '_setAllowLinker', true ]);
 	_gaq.push([ '_trackPageview' ]);
 
-	 (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-	
-	
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www')
+				+ '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
 	(function() {
 		var ga = document.createElement('script');
 		ga.type = 'text/javascript';
@@ -51,8 +55,24 @@
 </script>
 
 <!-- Place this tag in your head or just before your close body tag. -->
-<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
-  {lang: 'pt-BR'}
+<script type="text/javascript"
+	src="https://apis.google.com/js/plusone.js">
+	{
+		lang: 'pt-BR'
+	}
+</script>
+
+<script>
+	(function() {
+		var cx = '009893508065414653603:WMX1258904485';
+		var gcse = document.createElement('script');
+		gcse.type = 'text/javascript';
+		gcse.async = true;
+		gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:')
+				+ '//www.google.com/cse/cse.js?cx=' + cx;
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(gcse, s);
+	})();
 </script>
 
 </head>
@@ -146,6 +166,9 @@
 	<!-- Wrap the rest of the page in another container to center all the content. -->
 
 	<div class="container marketing">
+
+
+
 
 		<!-- Three columns of text below the carousel -->
 		<div class="row">
@@ -271,10 +294,23 @@
 			<p class="pull-right">
 				<a href="#">Voltar ao Topo</a>
 			</p>
-			<p>  <div class="g-plusone"></div>
-				&copy; 2013 Mario Jorge Pereira, Inc. &middot; <a href="#">Privacy</a>
-				&middot; <a href="#">Terms</a>
+			<p>
+				&copy; 2013 Mario Jorge Pereira, Inc. &middot; 
 			</p>
+			Buscar dentro do
+				Site:
+				<gcse:search></gcse:search>
+			<div class="g-plusone"></div>
+			<script async
+				src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- rodape -->
+			<ins class="adsbygoogle"
+				style="display: inline-block; width: 728px; height: 90px"
+				data-ad-client="ca-pub-1011007638245293" data-ad-slot="2953132924"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+
 		</footer>
 
 	</div>
